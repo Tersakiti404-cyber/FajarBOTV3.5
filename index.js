@@ -1,8 +1,8 @@
-const  XBOT = 'Rizky'; // Nama Bot Whatsapp
-const instagram = 'https://instagram.com/ff.rizkygans1'; // Nama Instagramlu cok
-const nomer = 'http://wa.me/+6288292030664'; // Nomor whatsapplu cok
+const  XBOT = 'Fajar BOT'; // Nama Bot Whatsapp
+const instagram = 'https://instagram.com/mhmdfjralfarizi_'; // Nama Instagramlu cok
+const nomer = 'http://wa.me/+6281333782061'; // Nomor whatsapplu cok
 const aktif = 'Tergantung kuota'; // Kapan bot lu aktif
-const groupwa = 'comming soon'; // OFFICIAL GRUP LU 1
+const groupwa = 'https://chat.whatsapp.com/JAyMRxSqC7f3demqHZDo80'; // OFFICIAL GRUP LU 1
 const youtube = 'coming sun'; 
 const qrcode = require("qrcode-terminal");
 const moment = require("moment");
@@ -23,7 +23,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'FN:affis\n' // full name
             + 'ORG:Owner  XBOT Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=6282334297175:+62 823-3429-7175\n' // WhatsApp ID + phone number
+            + 'TEL;type=CELL;type=VOICE;waid=6281333782061:+62 813-3378-2061\n' // WhatsApp ID + phone number
             + 'END:VCARD'
 
 const
@@ -73,11 +73,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ff.rizkygans1`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mhmdfjralfarizi_`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @ff.rizkygans1`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by @mhmdfjralfarizi_`)
 })
 
 conn.on('message-new', async(m) =>
@@ -143,12 +143,12 @@ else if (text == 'Asu'){
 conn.sendMessage(id, 'Lu Asw' ,MessageType.text);
 }
 else if (text == '#owner'){
-conn.sendMessage(id, 'Owner XBOT http://wa.me/+6285766853909' ,MessageType.text);
+conn.sendMessage(id, 'Owner XBOT http://wa.me/+62813-3378-2061' ,MessageType.text);
 }
-else if (text == 'Rizky'){
-conn.sendMessage(id, 'Aku BOT nya Rizky' ,MessageType.text);
+else if (text == 'Fajar'){
+conn.sendMessage(id, 'Aku BOT nya Fajar' ,MessageType.text);
 }
-else if (text == 'Disa'){
+else if (text == 'Mutia'){
 conn.sendMessage(id, 'pacar owner ihh' ,MessageType.text);
 }
 else if (text == 'bangsat'){
@@ -1067,10 +1067,10 @@ else if (text == '#foto'){
 conn.sendMessage(id, 'kirim .foto cewek/cowok\n\nContoh: .foto cewek' ,MessageType.text);
 }
 else if (text == '#menu'){
-conn.sendMessage(id, ' 🔍Thanks Telah Menggunakan BOT *Ghalyh Bot* , Follow Instagram Mimin Yah🔍� : https://instagram.com/ff.rizkygans1' ,MessageType.text);
+conn.sendMessage(id, ' 🔍Thanks Telah Menggunakan BOT *Ghalyh Bot* , Follow Instagram Mimin Yah🔍� : https://instagram.com/fmhmdfjralfarizi_' ,MessageType.text);
 }
 else if (text == '#info'){
-conn.sendMessage(id, ' 🔍Thanks Telah Menggunakan BOT *Ghalyh Bot* , Follow Instagram Mimin Yah🔍� : https://instagram.com/ff.rizkygans1' ,MessageType.text);
+conn.sendMessage(id, ' 🔍Thanks Telah Menggunakan BOT *Ghalyh Bot* , Follow Instagram Mimin Yah🔍� : https://instagram.com/mhmdfjralfarizi_' ,MessageType.text);
 }
 if (messageType == 'imageMessage')
    {
